@@ -1,76 +1,607 @@
 {
   "asOf": "2026-08-17",
+  "telemetryUrl": "",
   "services": [
-    {"name": "Netflix", "domains": ["netflix.com"], "keywords": ["netflix", "ネットフリックス", "ネトフリ"], "plans": [
-      {"label": "広告つきスタンダード", "price": 890, "currency": "jpy", "cycle": "monthly"},
-      {"label": "スタンダード", "price": 1590, "currency": "jpy", "cycle": "monthly"},
-      {"label": "プレミアム", "price": 2290, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "YouTube Premium", "domains": ["youtube.com"], "keywords": ["youtube premium", "ユーチューブ"], "plans": [
-      {"label": "個人", "price": 1280, "currency": "jpy", "cycle": "monthly"},
-      {"label": "ファミリー", "price": 2280, "currency": "jpy", "cycle": "monthly"},
-      {"label": "個人(年払い)", "price": 12800, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "Spotify", "domains": ["spotify.com"], "keywords": ["spotify", "スポティファイ"], "plans": [
-      {"label": "Premium Standard", "price": 1080, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Premium Duo", "price": 1480, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Premium Family", "price": 1780, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Amazonプライム", "domains": ["amazon.co.jp", "amazon.com"], "keywords": ["amazon", "プライム", "prime"], "plans": [
-      {"label": "月間", "price": 600, "currency": "jpy", "cycle": "monthly"},
-      {"label": "年間", "price": 5900, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "Disney+", "domains": ["disneyplus.com", "disney.co.jp"], "keywords": ["disney", "ディズニー"], "plans": [
-      {"label": "スタンダード", "price": 1140, "currency": "jpy", "cycle": "monthly"},
-      {"label": "プレミアム", "price": 1520, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Apple Music", "domains": ["music.apple.com"], "keywords": ["apple music", "アップルミュージック"], "plans": [
-      {"label": "個人", "price": 1080, "currency": "jpy", "cycle": "monthly"},
-      {"label": "ファミリー", "price": 1680, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Claude Pro", "domains": ["claude.ai", "anthropic.com"], "keywords": ["claude", "クロード"], "plans": [
-      {"label": "Pro(月払い)", "price": 20, "currency": "usd", "cycle": "monthly"},
-      {"label": "Pro(年払い)", "price": 200, "currency": "usd", "cycle": "yearly"},
-      {"label": "Max", "price": 100, "currency": "usd", "cycle": "monthly"}]},
-    {"name": "ChatGPT Plus", "domains": ["chatgpt.com", "openai.com"], "keywords": ["chatgpt", "openai"], "plans": [
-      {"label": "Plus", "price": 20, "currency": "usd", "cycle": "monthly"},
-      {"label": "Pro", "price": 200, "currency": "usd", "cycle": "monthly"}]},
-    {"name": "Google One", "domains": ["one.google.com"], "keywords": ["google one", "グーグルワン"], "plans": [
-      {"label": "ベーシック 100GB", "price": 290, "currency": "jpy", "cycle": "monthly"},
-      {"label": "プレミアム 2TB", "price": 1450, "currency": "jpy", "cycle": "monthly"},
-      {"label": "ベーシック 100GB(年払い)", "price": 2900, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "iCloud+", "domains": ["icloud.com"], "keywords": ["icloud"], "plans": [
-      {"label": "50GB", "price": 130, "currency": "jpy", "cycle": "monthly"},
-      {"label": "200GB", "price": 400, "currency": "jpy", "cycle": "monthly"},
-      {"label": "2TB", "price": 1500, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Kindle Unlimited", "domains": ["kindle.amazon.co.jp"], "keywords": ["kindle", "キンドル"], "plans": [
-      {"label": "読み放題", "price": 980, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Audible", "domains": ["audible.co.jp", "audible.com"], "keywords": ["audible", "オーディブル"], "plans": [
-      {"label": "聴き放題", "price": 1500, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "U-NEXT", "domains": ["unext.jp", "video.unext.jp"], "keywords": ["u-next", "unext", "ユーネクスト"], "plans": [
-      {"label": "月額プラン", "price": 2189, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Hulu", "domains": ["hulu.jp", "hulu.com"], "keywords": ["hulu", "フールー"], "plans": [
-      {"label": "月額", "price": 1026, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "dアニメストア", "domains": ["animestore.docomo.ne.jp"], "keywords": ["dアニメ", "danime"], "plans": [
-      {"label": "月額", "price": 550, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "ABEMAプレミアム", "domains": ["abema.tv"], "keywords": ["abema", "アベマ"], "plans": [
-      {"label": "プレミアム", "price": 1080, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "DAZN", "domains": ["dazn.com"], "keywords": ["dazn", "ダゾーン"], "plans": [
-      {"label": "Standard(月払い)", "price": 4200, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Standard(年払い)", "price": 32000, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "Nintendo Switch Online", "domains": ["nintendo.co.jp", "nintendo.com"], "keywords": ["nintendo", "ニンテンドー", "switch online"], "plans": [
-      {"label": "個人(月)", "price": 306, "currency": "jpy", "cycle": "monthly"},
-      {"label": "個人(年)", "price": 2400, "currency": "jpy", "cycle": "yearly"},
-      {"label": "ファミリー(年)", "price": 4500, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "PlayStation Plus", "domains": ["playstation.com"], "keywords": ["playstation", "プレステ", "ps plus"], "plans": [
-      {"label": "Essential(月)", "price": 850, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Extra(月)", "price": 1300, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Premium(月)", "price": 1550, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Xbox Game Pass", "domains": ["xbox.com"], "keywords": ["xbox", "game pass", "ゲームパス"], "plans": [
-      {"label": "Ultimate", "price": 1450, "currency": "jpy", "cycle": "monthly"},
-      {"label": "PC", "price": 990, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Microsoft 365", "domains": ["microsoft.com", "office.com"], "keywords": ["microsoft 365", "office"], "plans": [
-      {"label": "Personal(月)", "price": 2130, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Personal(年)", "price": 21300, "currency": "jpy", "cycle": "yearly"}]},
-    {"name": "Adobe Creative Cloud", "domains": ["adobe.com"], "keywords": ["adobe", "アドビ"], "plans": [
-      {"label": "コンプリート", "price": 7780, "currency": "jpy", "cycle": "monthly"},
-      {"label": "フォトプラン", "price": 1180, "currency": "jpy", "cycle": "monthly"}]},
-    {"name": "Dropbox", "domains": ["dropbox.com"], "keywords": ["dropbox", "ドロップボックス"], "plans": [
-      {"label": "Plus(月)", "price": 1500, "currency": "jpy", "cycle": "monthly"},
-      {"label": "Plus(年)", "price": 14400, "currency": "jpy", "cycle": "yearly"}]}
+    {
+      "name": "Netflix",
+      "domains": [
+        "netflix.com"
+      ],
+      "keywords": [
+        "netflix",
+        "ネットフリックス",
+        "ネトフリ"
+      ],
+      "plans": [
+        {
+          "label": "広告つきスタンダード",
+          "price": 890,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "スタンダード",
+          "price": 1590,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "プレミアム",
+          "price": 2290,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 1
+    },
+    {
+      "name": "YouTube Premium",
+      "domains": [
+        "youtube.com"
+      ],
+      "keywords": [
+        "youtube premium",
+        "ユーチューブ"
+      ],
+      "plans": [
+        {
+          "label": "個人",
+          "price": 1280,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "ファミリー",
+          "price": 2280,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "個人(年払い)",
+          "price": 12800,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 3
+    },
+    {
+      "name": "Spotify",
+      "domains": [
+        "spotify.com"
+      ],
+      "keywords": [
+        "spotify",
+        "スポティファイ"
+      ],
+      "plans": [
+        {
+          "label": "Premium Standard",
+          "price": 1080,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Premium Duo",
+          "price": 1480,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Premium Family",
+          "price": 1780,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 4
+    },
+    {
+      "name": "Amazonプライム",
+      "domains": [
+        "amazon.co.jp",
+        "amazon.com"
+      ],
+      "keywords": [
+        "amazon",
+        "プライム",
+        "prime"
+      ],
+      "plans": [
+        {
+          "label": "月間",
+          "price": 600,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "年間",
+          "price": 5900,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 2
+    },
+    {
+      "name": "Disney+",
+      "domains": [
+        "disneyplus.com",
+        "disney.co.jp"
+      ],
+      "keywords": [
+        "disney",
+        "ディズニー"
+      ],
+      "plans": [
+        {
+          "label": "スタンダード",
+          "price": 1140,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "プレミアム",
+          "price": 1520,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 5
+    },
+    {
+      "name": "Apple Music",
+      "domains": [
+        "music.apple.com"
+      ],
+      "keywords": [
+        "apple music",
+        "アップルミュージック"
+      ],
+      "plans": [
+        {
+          "label": "個人",
+          "price": 1080,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "ファミリー",
+          "price": 1680,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 7
+    },
+    {
+      "name": "Claude Pro",
+      "domains": [
+        "claude.ai",
+        "anthropic.com"
+      ],
+      "keywords": [
+        "claude",
+        "クロード"
+      ],
+      "plans": [
+        {
+          "label": "Pro(月払い)",
+          "price": 20,
+          "currency": "usd",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Pro(年払い)",
+          "price": 200,
+          "currency": "usd",
+          "cycle": "yearly"
+        },
+        {
+          "label": "Max",
+          "price": 100,
+          "currency": "usd",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 23
+    },
+    {
+      "name": "ChatGPT Plus",
+      "domains": [
+        "chatgpt.com",
+        "openai.com"
+      ],
+      "keywords": [
+        "chatgpt",
+        "openai"
+      ],
+      "plans": [
+        {
+          "label": "Plus",
+          "price": 20,
+          "currency": "usd",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Pro",
+          "price": 200,
+          "currency": "usd",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 8
+    },
+    {
+      "name": "Google One",
+      "domains": [
+        "one.google.com"
+      ],
+      "keywords": [
+        "google one",
+        "グーグルワン"
+      ],
+      "plans": [
+        {
+          "label": "ベーシック 100GB",
+          "price": 290,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "プレミアム 2TB",
+          "price": 1450,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "ベーシック 100GB(年払い)",
+          "price": 2900,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 14
+    },
+    {
+      "name": "iCloud+",
+      "domains": [
+        "icloud.com"
+      ],
+      "keywords": [
+        "icloud"
+      ],
+      "plans": [
+        {
+          "label": "50GB",
+          "price": 130,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "200GB",
+          "price": 400,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "2TB",
+          "price": 1500,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 15
+    },
+    {
+      "name": "Kindle Unlimited",
+      "domains": [
+        "kindle.amazon.co.jp"
+      ],
+      "keywords": [
+        "kindle",
+        "キンドル"
+      ],
+      "plans": [
+        {
+          "label": "読み放題",
+          "price": 980,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 12
+    },
+    {
+      "name": "Audible",
+      "domains": [
+        "audible.co.jp",
+        "audible.com"
+      ],
+      "keywords": [
+        "audible",
+        "オーディブル"
+      ],
+      "plans": [
+        {
+          "label": "聴き放題",
+          "price": 1500,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 19
+    },
+    {
+      "name": "U-NEXT",
+      "domains": [
+        "unext.jp",
+        "video.unext.jp"
+      ],
+      "keywords": [
+        "u-next",
+        "unext",
+        "ユーネクスト"
+      ],
+      "plans": [
+        {
+          "label": "月額プラン",
+          "price": 2189,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 6
+    },
+    {
+      "name": "Hulu",
+      "domains": [
+        "hulu.jp",
+        "hulu.com"
+      ],
+      "keywords": [
+        "hulu",
+        "フールー"
+      ],
+      "plans": [
+        {
+          "label": "月額",
+          "price": 1026,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 10
+    },
+    {
+      "name": "dアニメストア",
+      "domains": [
+        "animestore.docomo.ne.jp"
+      ],
+      "keywords": [
+        "dアニメ",
+        "danime"
+      ],
+      "plans": [
+        {
+          "label": "月額",
+          "price": 550,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 16
+    },
+    {
+      "name": "ABEMAプレミアム",
+      "domains": [
+        "abema.tv"
+      ],
+      "keywords": [
+        "abema",
+        "アベマ"
+      ],
+      "plans": [
+        {
+          "label": "プレミアム",
+          "price": 1080,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 9
+    },
+    {
+      "name": "DAZN",
+      "domains": [
+        "dazn.com"
+      ],
+      "keywords": [
+        "dazn",
+        "ダゾーン"
+      ],
+      "plans": [
+        {
+          "label": "Standard(月払い)",
+          "price": 4200,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Standard(年払い)",
+          "price": 32000,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 11
+    },
+    {
+      "name": "Nintendo Switch Online",
+      "domains": [
+        "nintendo.co.jp",
+        "nintendo.com"
+      ],
+      "keywords": [
+        "nintendo",
+        "ニンテンドー",
+        "switch online"
+      ],
+      "plans": [
+        {
+          "label": "個人(月)",
+          "price": 306,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "個人(年)",
+          "price": 2400,
+          "currency": "jpy",
+          "cycle": "yearly"
+        },
+        {
+          "label": "ファミリー(年)",
+          "price": 4500,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 13
+    },
+    {
+      "name": "PlayStation Plus",
+      "domains": [
+        "playstation.com"
+      ],
+      "keywords": [
+        "playstation",
+        "プレステ",
+        "ps plus"
+      ],
+      "plans": [
+        {
+          "label": "Essential(月)",
+          "price": 850,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Extra(月)",
+          "price": 1300,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Premium(月)",
+          "price": 1550,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 20
+    },
+    {
+      "name": "Xbox Game Pass",
+      "domains": [
+        "xbox.com"
+      ],
+      "keywords": [
+        "xbox",
+        "game pass",
+        "ゲームパス"
+      ],
+      "plans": [
+        {
+          "label": "Ultimate",
+          "price": 1450,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "PC",
+          "price": 990,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 33
+    },
+    {
+      "name": "Microsoft 365",
+      "domains": [
+        "microsoft.com",
+        "office.com"
+      ],
+      "keywords": [
+        "microsoft 365",
+        "office"
+      ],
+      "plans": [
+        {
+          "label": "Personal(月)",
+          "price": 2130,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Personal(年)",
+          "price": 21300,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 21
+    },
+    {
+      "name": "Adobe Creative Cloud",
+      "domains": [
+        "adobe.com"
+      ],
+      "keywords": [
+        "adobe",
+        "アドビ"
+      ],
+      "plans": [
+        {
+          "label": "コンプリート",
+          "price": 7780,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "フォトプラン",
+          "price": 1180,
+          "currency": "jpy",
+          "cycle": "monthly"
+        }
+      ],
+      "popularity": 22
+    },
+    {
+      "name": "Dropbox",
+      "domains": [
+        "dropbox.com"
+      ],
+      "keywords": [
+        "dropbox",
+        "ドロップボックス"
+      ],
+      "plans": [
+        {
+          "label": "Plus(月)",
+          "price": 1500,
+          "currency": "jpy",
+          "cycle": "monthly"
+        },
+        {
+          "label": "Plus(年)",
+          "price": 14400,
+          "currency": "jpy",
+          "cycle": "yearly"
+        }
+      ],
+      "popularity": 34
+    }
   ]
 }
