@@ -25,30 +25,39 @@
 <body>
 
 <h1>プライバシーポリシー — サブスク番人 (Subs Keeper)</h1>
-<p class="updated">最終更新日: 2026年7月25日</p>
+<p class="updated">最終更新日: 2026年10月18日</p>
 
-<h2>収集する情報</h2>
-<p>サブスク番人は、ユーザーの個人情報を<strong>一切収集しません</strong>。</p>
+<h2>概要</h2>
+<p>サブスク番人は、氏名・メールアドレス・位置情報などの<strong>個人情報を収集しません</strong>。</p>
 <ul>
-  <li>登録されたサブスクリプション情報(サービス名、金額、更新日、メモ)は、すべて<strong>お使いの端末内にのみ</strong>保存されます</li>
-  <li>外部サーバーへのデータ送信は行いません</li>
+  <li>登録されたサブスクリプション情報(サービス名、金額、更新日、メモ)は、すべて<strong>お使いの端末内にのみ</strong>保存され、外部に送信されることはありません</li>
   <li>アカウント登録は不要です</li>
-  <li>広告は表示しません</li>
-  <li>アクセス解析ツールは使用していません</li>
+  <li>広告は表示しません。広告やトラッキングのためのSDKも使用していません</li>
+  <li>インターネット通信を行うのは、次の「参考価格表の取得」と、ユーザーがオンにした場合だけの「任意の匿名利用統計」の2つです</li>
 </ul>
 
 <h2>権限について</h2>
 <ul>
   <li><strong>通知</strong>: サブスクリプションの更新日前にリマインダー通知を表示するためにのみ使用します</li>
-  <li><strong>インターネットアクセス</strong>: (1) メモに記載されたURL(解約ページなど)をユーザーの操作でブラウザで開くため、(2) 各サービスの参考価格表(当アプリが公開する静的ファイル)を読み取るためにのみ使用します。この通信でユーザーの情報が送信されることはありません</li>
+  <li><strong>インターネットアクセス</strong>: (1) メモに記載されたURL(解約ページなど)をユーザーの操作でブラウザで開くため、(2) 参考価格表を取得するため、(3) 任意の匿名利用統計を送るため(オンにした場合のみ)に使用します</li>
+</ul>
+
+<h2>参考価格表の取得</h2>
+<p>サービスの候補と参考価格を最新にするため、アプリの起動時(前回の取得から12時間以上たっている場合)に、当アプリが GitHub Pages で公開している静的ファイル(価格表のJSON)を読み込みます。</p>
+<ul>
+  <li>この通信で、ユーザーが登録した情報や端末を識別する情報を送ることはありません</li>
+  <li>通常のウェブ閲覧と同じく、通信の際にIPアドレスなどの接続情報が配信元の GitHub に届きます。その取り扱いには GitHub のプライバシーポリシーが適用されます</li>
+  <li>取得できない場合(圏外など)は、アプリに内蔵の価格表で動作します</li>
 </ul>
 
 <h2>任意の匿名利用統計(オプトイン)</h2>
 <p>予測変換で「多くの人が登録しているサービス」を上位に表示するため、ユーザーが設定で<strong>明示的にオンにした場合に限り</strong>、登録したサービスのカタログ名(例: Netflix)のみを匿名で送信します。</p>
 <ul>
   <li>初期設定はオフです。設定画面からいつでもオフにできます</li>
-  <li>送信するのはカタログに登録されたサービス名のみで、ユーザーが入力した名称・金額・日付・メモ、端末情報、アカウント情報、識別子は一切送信しません</li>
-  <li>受け取った側はサービス名ごとの件数のみを保持し、送信元を特定する情報は保存しません</li>
+  <li>送信するのはカタログに登録されたサービス名のみで、ユーザーが入力した名称・金額・日付・メモ、端末情報、アカウント情報、識別子は一切送信しません。カタログに無いサービスは送信しません</li>
+  <li>送信先は、開発者が Google Apps Script で運用する集計用の受け口です。受け口はサービス名ごとの件数のみを保存し、IPアドレスや識別子など送信元を特定する情報は保存しません</li>
+  <li>通信の際にIPアドレスなどの接続情報が Google に届きます。その取り扱いには Google のプライバシーポリシーが適用されます</li>
+  <li>集計した件数は、予測変換の並び順(人気順)として価格表に反映する目的にのみ使用します</li>
 </ul>
 
 <h2>端末内でのアプリの有無の確認</h2>
@@ -63,19 +72,22 @@
 <hr>
 
 <h1>Privacy Policy — Subs Keeper</h1>
-<p class="updated">Last updated: July 25, 2026</p>
+<p class="updated">Last updated: October 18, 2026</p>
 
-<h2>Information We Collect</h2>
-<p>Subs Keeper does <strong>not collect any personal information</strong>. All subscription data (service names, prices, renewal dates, notes) is stored <strong>only on your device</strong>. No data is transmitted to external servers. No account registration, no ads, no analytics.</p>
+<h2>Overview</h2>
+<p>Subs Keeper does <strong>not collect personal information</strong> such as your name, email address or location. All subscription data (service names, prices, renewal dates, notes) is stored <strong>only on your device</strong> and is never transmitted. No account registration, no ads, and no advertising or tracking SDKs. The app uses the network only for the reference price list below and, only if you turn it on, the optional anonymous usage statistics.</p>
 
 <h2>Permissions</h2>
 <ul>
   <li><strong>Notifications</strong>: used solely for renewal reminders.</li>
-  <li><strong>Network access</strong>: used solely to (1) open URLs in your notes when you tap them, and (2) download a static reference price list published by this app. No user data is ever transmitted.</li>
+  <li><strong>Network access</strong>: used to (1) open URLs in your notes when you tap them, (2) download the reference price list, and (3) send optional anonymous usage statistics (only if enabled).</li>
 </ul>
 
+<h2>Reference Price List</h2>
+<p>To keep service suggestions and reference prices up to date, the app downloads a static JSON file published by this app on GitHub Pages when it starts (at most once every 12 hours). No subscription data or device identifiers are sent. As with any web request, connection information such as your IP address reaches GitHub, whose privacy policy applies. If the download fails, the built-in price list is used.</p>
+
 <h2>Optional Anonymous Usage Statistics (Opt-in)</h2>
-<p>Only if you explicitly turn it on in Settings, the app sends the catalog name of a registered service (e.g. "Netflix") anonymously, so that popular services can be ranked higher in suggestions. It is off by default and can be turned off at any time. Nothing else is sent: no user-entered names, amounts, dates, notes, device information, account information or identifiers. The receiving side keeps only per-service counts and stores nothing that identifies the sender.</p>
+<p>Only if you explicitly turn it on in Settings, the app sends the catalog name of a registered service (e.g. "Netflix") anonymously, so that popular services can be ranked higher in suggestions. It is off by default and can be turned off at any time. Nothing else is sent: no user-entered names, amounts, dates, notes, device information, account information or identifiers. Services not in the catalog are never sent. The data goes to a collection endpoint run by the developer on Google Apps Script, which keeps only per-service counts and stores nothing that identifies the sender (no IP addresses or identifiers). Connection information such as your IP address reaches Google, whose privacy policy applies. The counts are used only to rank suggestions by popularity in the price list.</p>
 
 <h2>On-device App Presence Check</h2>
 <p>To rank suggestions, the app checks on-device whether a fixed set of apps (e.g. Netflix) is installed. It does not enumerate installed apps and never transmits the result.</p>
