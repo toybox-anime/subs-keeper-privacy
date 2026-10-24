@@ -25,15 +25,15 @@
 <body>
 
 <h1>プライバシーポリシー — サブスク番人 (Subs Keeper)</h1>
-<p class="updated">最終更新日: 2026年10月18日</p>
+<p class="updated">最終更新日: 2026年10月24日</p>
 
 <h2>概要</h2>
-<p>サブスク番人は、氏名・メールアドレス・位置情報などの<strong>個人情報を収集しません</strong>。</p>
+<p>サブスク番人は、ログインしない限り、氏名・メールアドレス・位置情報などの<strong>個人情報を収集しません</strong>。任意の「クラウド同期」を使うためにログインした場合の取り扱いは、下記「クラウド同期」をご覧ください。</p>
 <ul>
-  <li>登録されたサブスクリプション情報(サービス名、金額、更新日、メモ)は、すべて<strong>お使いの端末内にのみ</strong>保存され、外部に送信されることはありません</li>
-  <li>アカウント登録は不要です</li>
+  <li>登録されたサブスクリプション情報(サービス名、金額、更新日、メモ)は、<strong>お使いの端末内に</strong>保存されます。任意のクラウド同期をオンにしない限り、外部に送信されることはありません</li>
+  <li>アカウント登録は不要です(クラウド同期を使う場合のみ、Google または Apple のアカウントでログインします)</li>
   <li>広告は表示しません。広告やトラッキングのためのSDKも使用していません</li>
-  <li>インターネット通信を行うのは、次の「参考価格表の取得」と、ユーザーがオンにした場合だけの「任意の匿名利用統計」の2つです</li>
+  <li>インターネット通信を行うのは、「参考価格表の取得」、ユーザーがオンにした場合だけの「任意の匿名利用統計」、ログインした場合だけの「クラウド同期」の3つです</li>
 </ul>
 
 <h2>権限について</h2>
@@ -60,11 +60,22 @@
   <li>集計した件数は、予測変換の並び順(人気順)として価格表に反映する目的にのみ使用します</li>
 </ul>
 
+<h2>クラウド同期(任意・ログインした場合のみ)</h2>
+<p>複数の端末(Android / iPhone / Web版)で同じデータを使うための機能です。設定画面から Google または Apple のアカウントで<strong>ログインした場合に限り</strong>有効になり、ログインしなければ一切使われません。</p>
+<ul>
+  <li><strong>保存するデータ</strong>: 登録したサブスクリプション情報(サービス名、金額、更新日、メモ、種類など)、支払い履歴、ドル換算レート、Pro版の購入状態</li>
+  <li><strong>アカウント情報</strong>: ログインに使ったアカウントのメールアドレスと、Firebase が発行する利用者ID。本人のデータを本人だけが読めるようにするために使い、他の目的には使いません</li>
+  <li><strong>保存先</strong>: Google が提供する Firebase(Cloud Firestore、データの保存場所は東京リージョン)。通信は暗号化(HTTPS)されます。Firebase の取り扱いには Google のプライバシーポリシーが適用されます</li>
+  <li><strong>アクセス制御</strong>: データは利用者IDごとに分けて保存し、ログインした本人以外は読み書きできないようにサーバー側のルールで制限しています。開発者がデータを閲覧・販売・第三者提供することはありません</li>
+  <li><strong>ログアウト</strong>: ログアウトすると端末とクラウドの通信は止まります。端末内のデータとクラウド上のデータはどちらも残ります</li>
+  <li><strong>削除</strong>: クラウド上のデータとアカウントの削除を希望する場合は、下記お問い合わせ先へログインに使ったメールアドレスからご連絡ください。確認のうえ削除します</li>
+</ul>
+
 <h2>端末内でのアプリの有無の確認</h2>
 <p>予測変換の並び替えのため、あらかじめ定めた一部のアプリ(Netflix など)が端末にインストールされているかを<strong>端末内で</strong>確認します。インストール済みアプリの一覧を取得することはなく、確認結果を外部に送信することもありません。</p>
 
 <h2>データの削除</h2>
-<p>アプリをアンインストールすると、保存されたすべてのデータが削除されます。</p>
+<p>アプリをアンインストールすると、端末内に保存されたすべてのデータが削除されます。クラウド同期を使っていた場合のクラウド上のデータは、上記「クラウド同期」の手順で削除できます。</p>
 
 <h2>お問い合わせ</h2>
 <p>本ポリシーに関するお問い合わせ: samuraidarkgamer@gmail.com</p>
@@ -72,10 +83,10 @@
 <hr>
 
 <h1>Privacy Policy — Subs Keeper</h1>
-<p class="updated">Last updated: October 18, 2026</p>
+<p class="updated">Last updated: October 24, 2026</p>
 
 <h2>Overview</h2>
-<p>Subs Keeper does <strong>not collect personal information</strong> such as your name, email address or location. All subscription data (service names, prices, renewal dates, notes) is stored <strong>only on your device</strong> and is never transmitted. No account registration, no ads, and no advertising or tracking SDKs. The app uses the network only for the reference price list below and, only if you turn it on, the optional anonymous usage statistics.</p>
+<p>Unless you sign in, Subs Keeper does <strong>not collect personal information</strong> such as your name, email address or location. Subscription data (service names, prices, renewal dates, notes) is stored on your device and is never transmitted unless you enable the optional cloud sync. No account is required (you sign in with Google or Apple only if you want cloud sync), no ads, and no advertising or tracking SDKs. The app uses the network only for the reference price list, the optional anonymous usage statistics (if enabled) and cloud sync (if signed in).</p>
 
 <h2>Permissions</h2>
 <ul>
@@ -89,11 +100,22 @@
 <h2>Optional Anonymous Usage Statistics (Opt-in)</h2>
 <p>Only if you explicitly turn it on in Settings, the app sends the catalog name of a registered service (e.g. "Netflix") anonymously, so that popular services can be ranked higher in suggestions. It is off by default and can be turned off at any time. Nothing else is sent: no user-entered names, amounts, dates, notes, device information, account information or identifiers. Services not in the catalog are never sent. The data goes to a collection endpoint run by the developer on Google Apps Script, which keeps only per-service counts and stores nothing that identifies the sender (no IP addresses or identifiers). Connection information such as your IP address reaches Google, whose privacy policy applies. The counts are used only to rank suggestions by popularity in the price list.</p>
 
+<h2>Cloud Sync (Optional, only when signed in)</h2>
+<p>Cloud sync lets you use the same data on several devices (Android, iPhone and the web version). It is active only if you sign in with a Google or Apple account from Settings; otherwise it is never used.</p>
+<ul>
+  <li><strong>Data stored</strong>: your subscriptions (service names, prices, renewal dates, notes, type etc.), payment history, USD exchange rate and Pro purchase status.</li>
+  <li><strong>Account data</strong>: the email address of the account you signed in with and the user ID issued by Firebase, used only so that your data can be read by you alone.</li>
+  <li><strong>Where</strong>: Firebase (Cloud Firestore, Tokyo region) provided by Google, over HTTPS. Google's privacy policy applies to Firebase.</li>
+  <li><strong>Access control</strong>: data is stored per user ID and server-side rules allow access only to the signed-in owner. The developer does not view, sell or share your data.</li>
+  <li><strong>Sign-out</strong>: stops syncing; data on the device and in the cloud both remain.</li>
+  <li><strong>Deletion</strong>: to delete your cloud data and account, contact the address below from the email you signed in with.</li>
+</ul>
+
 <h2>On-device App Presence Check</h2>
 <p>To rank suggestions, the app checks on-device whether a fixed set of apps (e.g. Netflix) is installed. It does not enumerate installed apps and never transmits the result.</p>
 
 <h2>Data Deletion</h2>
-<p>Uninstalling the app deletes all stored data.</p>
+<p>Uninstalling the app deletes all data stored on the device. Cloud data (if you used cloud sync) can be deleted as described under Cloud Sync.</p>
 
 <h2>Contact</h2>
 <p>samuraidarkgamer@gmail.com</p>
