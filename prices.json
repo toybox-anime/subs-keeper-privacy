@@ -172,7 +172,7 @@
           "cycle": "monthly"
         }
       ],
-      "popularity": 7
+      "popularity": 5
     },
     {
       "name": "Claude Pro",
@@ -230,7 +230,7 @@
           "cycle": "monthly"
         }
       ],
-      "popularity": 8
+      "popularity": 3
     },
     {
       "name": "Google One",
